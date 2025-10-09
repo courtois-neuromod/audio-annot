@@ -17,7 +17,8 @@ def get_fig_indices(Df, indices, time_axe):
     
    
     fig.update_layout(margin={"r":0,"t":50,"l":0,"b":0}, coloraxis_colorbar=dict(
-        title="<b>Probabilité</b>",titleside='right',
+                        title="<b>Probabilité</b>",
+                        #titleside='right',
                         thicknessmode="pixels", thickness=30,
                         lenmode="pixels", len=400,
                         yanchor="bottom", y=0.0,

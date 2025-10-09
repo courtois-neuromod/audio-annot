@@ -206,4 +206,5 @@ def update_signal(clickData, src, mode, dB, fmin, fmax, cmin, cmax, shift):
     return(fig_g.get_sample_fig(Df['datetime'][idx], AUDIO_PATH, None, mode, src, (fmin, fmax), (cmin, cmax), dB, shift),  src)
 
 if __name__ == '__main__':
-    app.run_server(host='localhost',debug=False, port=8054)
+    #app.run_server(host='localhost',debug=False, port=8054)
+    app.run(host='localhost',debug=False, port=8054)
