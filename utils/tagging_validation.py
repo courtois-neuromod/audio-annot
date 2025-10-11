@@ -107,19 +107,19 @@ def tagging_validate(Df,fewlabels=fewlabels,dict_allcats=dict_allcats):
     ### And Finally let's do an estimation of BioPhony, Antropophony and Geophony level using audio tagging results 
     ### For that, we group the categories accordingly : 
 
-    macro_cat = {'geophony':['Wind', 'Rain', 'River', 'Wave', 'Thunder'],'biophony': ['Bird', 'Amphibian', 'Insect', 'Mammal', 'Reptile'], 'anthropophony': ['Walking', 'Cycling', 'Beep', 'Car', 'Car honk', 'Motorbike', 'Plane', 'Helicopter', 'Boat', 'Others_motors', 'Shoot', 'Bell', 'Talking', 'Music', 'Kitchen sounds', 'Rolling shutter'],
-    'buzz':['Buzz'],
-    'domesticanimals':['Dog bark','Rooster']}
+    #macro_cat = {'geophony':['Wind', 'Rain', 'River', 'Wave', 'Thunder'],'biophony': ['Bird', 'Amphibian', 'Insect', 'Mammal', 'Reptile'], 'anthropophony': ['Walking', 'Cycling', 'Beep', 'Car', 'Car honk', 'Motorbike', 'Plane', 'Helicopter', 'Boat', 'Others_motors', 'Shoot', 'Bell', 'Talking', 'Music', 'Kitchen sounds', 'Rolling shutter'],
+    #'buzz':['Buzz'],
+    #'domesticanimals':['Dog bark','Rooster']}
 
 
     ### and now we will calculate the average probability in each of the three macro categories 
 
-    for cursubcat in macro_cat.keys():
-        curlabels = ['tag_' + i for i in macro_cat[cursubcat]]
+    #for cursubcat in macro_cat.keys():
+    #    curlabels = ['tag_' + i for i in macro_cat[cursubcat]]
 
-        curDf = Df_new[curlabels]
+    #    curDf = Df_new[curlabels]
 
-        Df_new[cursubcat] = curDf.max(axis=1)
+    #    Df_new[cursubcat] = curDf.max(axis=1)
 
     return Df_new
 
